@@ -29,14 +29,14 @@
 
         // 引数として渡されたtでデータオブジェクトを作りたいので変数dという変数名で作ってみる
         var d = new Date(t);
-
         var m = d.getMinutes();
         var s = d.getSeconds();
         m = ('0' + m).slice(-2);
         s = ('0' + s).slice(-2);
         timer.textContent = m + ':' + s;
         
-        let title = timer.textContent = m + ':' + s;;
+        // タイマーをタブにも表示する
+        var title = timer.textContent = m + ':' + s;;
         document.title = title;
 
     }
