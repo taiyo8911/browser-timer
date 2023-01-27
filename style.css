@@ -1,46 +1,39 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 html {
     touch-action: manipulation;
 }
 
-a{
+body {
+    text-align: center;
+}
+
+a {
     text-decoration: none;
 }
 
-header{
-    margin-top: 20px;
-}
-
-h1 {
-    font-size: 5vw;
-    color: gray;
-    text-align: center;
-}
-
-button {
-    font-size: 3vw;
+.container {
+    height: 100vh;
+    background-color: pink;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    background-color: pink;
-    max-width: 100%;
-    width: 100%;
-    color: #0c0c14;
-    padding: 10px;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 7vw;
+    padding: 50px;
 }
 
-.twitter{
-    margin-top: 20px;
-    text-align: center;
+#timer {
+    font-size: 80px;
 }
 
-footer{
-    margin-top: 20px;
-    text-align: center;
+button {
+    font-size: 18px;
+    margin: 10px;
 }
