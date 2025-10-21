@@ -54,6 +54,12 @@
             if (timeLeft < 0) {
                 isRunning = false;
                 start.textContent = 'スタート';
+
+                // 分、秒、リセットボタンを有効化
+                min.disabled = false;
+                sec.disabled = false;
+                reset.disabled = false;
+
                 clearTimeout(timerId);
                 timeLeft = 0;
 
@@ -78,7 +84,12 @@
             isRunning = true;
 
             start.textContent = 'ストップ';
-            
+
+            // 分、秒、リセットボタンを無効化
+            min.disabled = true;
+            sec.disabled = true;
+            reset.disabled = true;
+
             startTime = Date.now();
 
             // カウントダウンの機能は再帰的に実行
@@ -88,6 +99,11 @@
 
             // 表記をStartに戻す
             start.textContent = 'スタート';
+
+            // 分、秒、リセットボタンを有効化
+            min.disabled = false;
+            sec.disabled = false;
+            reset.disabled = false;
 
             // この時点のtimeLeftで更新してあげる
             timeToCountDown = timeLeft;
